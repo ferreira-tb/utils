@@ -4,7 +4,8 @@ export default config({
   project: ['./tsconfig.json'],
   overrides: {
     typescript: {
-      '@typescript-eslint/explicit-function-return-type': 'error'
+      '@typescript-eslint/explicit-function-return-type': 'error',
+      '@typescript-eslint/no-explicit-any': 'off'
     }
   }
 });

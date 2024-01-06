@@ -24,6 +24,13 @@ export function isEmpty(value?: unknown): boolean {
   return true;
 }
 
+// prettier-ignore
+export function repeat(amount: number, fn: (current?: number) => void): void {
+  for (let i = 0; i < amount; i++) {
+    fn(i);
+  }
+}
+
 export function toArray<T>(item?: Nullish<MaybeArray<T>>): T[] {
   const array = item ?? [];
   return Array.isArray(array) ? array : [array];
