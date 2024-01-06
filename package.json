@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -35,6 +35,7 @@
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky install",
+    "release": "nr bump && nr build && pnpm publish",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
