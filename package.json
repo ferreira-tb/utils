@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -35,11 +35,11 @@
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky install",
-    "release": "nr bump && nr build && pnpm publish",
+    "release": "nr build && nr bump && pnpm publish",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.0.7"
+    "@tb-dev/utility-types": "^1.0.8"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",
