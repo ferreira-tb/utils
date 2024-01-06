@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -48,7 +48,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "rollup": "^4.9.3",
+    "rollup": "^4.9.4",
     "taze": "^0.13.1",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.6",
