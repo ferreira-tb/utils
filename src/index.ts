@@ -24,13 +24,12 @@ export function isEmpty(value?: unknown): boolean {
   return true;
 }
 
-// prettier-ignore
-export function repeat(amount: number, fn: (current?: number) => void): void {
+export function repeat(amount: number, fn: (current: number) => void): void {
   let n = Math.trunc(amount);
   if (n < 1) {
-    n = 0
+    n = 0;
   } else if (n > Number.MAX_SAFE_INTEGER) {
-    n = Number.MAX_SAFE_INTEGER
+    n = Number.MAX_SAFE_INTEGER;
   }
 
   for (let i = 0; i < n; i++) {
