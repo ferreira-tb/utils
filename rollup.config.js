@@ -3,7 +3,7 @@ import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
 
 export default defineConfig({
-  plugins: [typescript(), dts({ rollupTypes: true, declarationOnly: true })],
+  plugins: [typescript(), dts({ rollupTypes: true })],
   input: 'src/index.ts',
   output: [
     {
