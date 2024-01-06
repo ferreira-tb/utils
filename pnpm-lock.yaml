@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tb-dev/utility-types':
-    specifier: ^1.0.7
-    version: 1.0.7
+    specifier: ^1.0.8
+    version: 1.0.8
 
 devDependencies:
   '@rollup/plugin-typescript':
@@ -799,8 +799,8 @@ packages:
       - vitest
     dev: true
 
-  /@tb-dev/utility-types@1.0.7:
-    resolution: {integrity: sha512-4IxyfEoCAwlzwCF3+J6vgl2QB/VVO1qUE16oAayI0BP4GIZ7Cij3fOXsZLfH50XC4aX+EtcOxtooT5d0qL9t3g==}
+  /@tb-dev/utility-types@1.0.8:
+    resolution: {integrity: sha512-Aw03DJIGONW9KkpgOPtz7nGxw3lzLVNsToGh6jQVGzE/EAWe0aXTchL6R+CLSoO1POBfX9PYWZ8kvoar1jUNcA==}
     dev: false
 
   /@tufjs/canonical-json@2.0.0:
