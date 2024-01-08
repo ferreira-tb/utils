@@ -1,4 +1,6 @@
-import type { MaybeArray, Nullish } from '@tb-dev/utility-types';
+import type { Nullish } from '@tb-dev/utility-types';
+
+export * from './array';
 
 /**
  * Check if a value is empty.
@@ -35,11 +37,6 @@ export function repeat(amount: number, fn: (current: number) => void): void {
   for (let i = 0; i < n; i++) {
     fn(i);
   }
-}
-
-export function toArray<T>(item?: Nullish<MaybeArray<T>>): T[] {
-  const array = item ?? [];
-  return Array.isArray(array) ? array : [array];
 }
 
 /**
