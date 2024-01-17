@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -25,49 +25,47 @@
   ],
   "lint-staged": {
     "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write",
-    "*.{?(c|m)@(j|t)s,vue}": "pnpm lint"
+    "*.{?(c|m)@(j|t)s,vue}": "pnpm run lint"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "build": "vite build",
     "bump": "miho bump -k -a .",
     "docs": "typedoc --plugin typedoc-plugin-mdn-links",
     "format": "prettier . --write",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky install",
-    "release": "nr build && nr bump && pnpm publish",
+    "release": "pnpm run build && pnpm run bump && pnpm publish",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.0.9"
+    "@tb-dev/utility-types": "^1.0.10"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@tb-dev/eslint-config": "^1.5.15",
-    "@types/node": "^20.11.0",
+    "@tb-dev/eslint-config": "^1.6.2",
+    "@types/node": "^20.11.5",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.1",
-    "rollup": "^4.9.5",
+    "prettier": "^3.2.4",
     "taze": "^0.13.1",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.7",
-    "typedoc-plugin-mdn-links": "^3.1.11",
+    "typedoc-plugin-mdn-links": "^3.1.12",
     "typescript": "5.3.3",
     "vite": "^5.0.11",
-    "vite-plugin-dts": "^3.7.0"
+    "vite-plugin-dts": "^3.7.1"
   },
   "files": [
     "dist"
   ],
   "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   }
