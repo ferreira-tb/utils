@@ -5,7 +5,8 @@ export default config({
   overrides: {
     typescript: {
       '@typescript-eslint/explicit-function-return-type': 'error',
-      '@typescript-eslint/no-explicit-any': 'off'
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/unified-signatures': 'off'
     }
   }
 });

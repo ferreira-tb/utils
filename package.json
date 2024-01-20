@@ -39,10 +39,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.0.10"
+    "@tb-dev/utility-types": "^1.0.11"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^1.6.2",
+    "@tb-dev/eslint-config": "^1.6.5",
     "@types/node": "^20.11.5",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
@@ -53,7 +53,7 @@
     "typedoc": "^0.25.7",
     "typedoc-plugin-mdn-links": "^3.1.12",
     "typescript": "5.3.3",
-    "vite": "^5.0.11",
+    "vite": "^5.0.12",
     "vite-plugin-dts": "^3.7.1"
   },
   "files": [

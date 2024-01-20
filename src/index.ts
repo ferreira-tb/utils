@@ -12,8 +12,11 @@ export * from './array';
  */
 export function isEmpty(value?: Nullish<string>): boolean;
 export function isEmpty<T>(value?: Nullish<T[]>): boolean;
+export function isEmpty<T>(value?: Nullish<readonly T[]>): boolean;
 export function isEmpty<K>(value?: Nullish<Set<K>>): boolean;
+export function isEmpty<K>(value?: Nullish<ReadonlySet<K>>): boolean;
 export function isEmpty<K, V>(value?: Nullish<Map<K, V>>): boolean;
+export function isEmpty<K, V>(value?: Nullish<ReadonlyMap<K, V>>): boolean;
 export function isEmpty(value?: unknown): boolean {
   if (Array.isArray(value) || typeof value === 'string') {
     return value.length === 0;

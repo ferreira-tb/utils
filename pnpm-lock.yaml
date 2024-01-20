@@ -6,13 +6,13 @@ settings:
 
 dependencies:
   '@tb-dev/utility-types':
-    specifier: ^1.0.10
-    version: 1.0.10
+    specifier: ^1.0.11
+    version: 1.0.11
 
 devDependencies:
   '@tb-dev/eslint-config':
-    specifier: ^1.6.2
-    version: 1.6.2(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^1.6.5
+    version: 1.6.5(eslint@8.56.0)(typescript@5.3.3)
   '@types/node':
     specifier: ^20.11.5
     version: 20.11.5
@@ -44,11 +44,11 @@ devDependencies:
     specifier: 5.3.3
     version: 5.3.3
   vite:
-    specifier: ^5.0.11
-    version: 5.0.11(@types/node@20.11.5)
+    specifier: ^5.0.12
+    version: 5.0.12(@types/node@20.11.5)
   vite-plugin-dts:
     specifier: ^3.7.1
-    version: 3.7.1(@types/node@20.11.5)(typescript@5.3.3)(vite@5.0.11)
+    version: 3.7.1(@types/node@20.11.5)(typescript@5.3.3)(vite@5.0.12)
 
 packages:
 
@@ -741,8 +741,8 @@ packages:
       - supports-color
     dev: true
 
-  /@tb-dev/eslint-config@1.6.2(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-4T3LsoHrU1WeRkGjgoAdd7u6vQOgW9CFopsM62RZA9ME35p7RTEb11/4CjcwiwCK1KIYhfTEKfK6ZdJDgE3C9g==}
+  /@tb-dev/eslint-config@1.6.5(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-L6HTLPrjUrQMekd43w3R3V/S3Y2flIjaLCPVPWdn0UoecR48vL1BeVsVtMbwIi8Bq2z8HqxQc+7oRVc5ShWQaQ==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
@@ -765,8 +765,8 @@ packages:
       - vitest
     dev: true
 
-  /@tb-dev/utility-types@1.0.10:
-    resolution: {integrity: sha512-x3VRqJ+RYYEvFi8Kv8+x2qKxkKS81aK+/8dqo6eKkdf2M84h3lKXGVVgl2kc0Ap/3qUHKM/Ii58Kw8eS7U+T7w==}
+  /@tb-dev/utility-types@1.0.11:
+    resolution: {integrity: sha512-p83S5Hsj7KOXjiGfvLPzyB+KuIlKdRRH9Lxxbx9Z/j3L0JbURuJnu7ZC3TJGL4xN21oJ8dxLcK9TnWpsMSyKjA==}
     dev: false
 
   /@tufjs/canonical-json@2.0.0:
@@ -3428,7 +3428,7 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /vite-plugin-dts@3.7.1(@types/node@20.11.5)(typescript@5.3.3)(vite@5.0.11):
+  /vite-plugin-dts@3.7.1(@types/node@20.11.5)(typescript@5.3.3)(vite@5.0.12):
     resolution: {integrity: sha512-VZJckNFpVfRAkmOxhGT5OgTUVWVXxkNQqLpBUuiNGAr9HbtvmvsPLo2JB3Xhn+o/Z9+CT6YZfYa4bX9SGR5hNw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3444,7 +3444,7 @@ packages:
       debug: 4.3.4
       kolorist: 1.8.0
       typescript: 5.3.3
-      vite: 5.0.11(@types/node@20.11.5)
+      vite: 5.0.12(@types/node@20.11.5)
       vue-tsc: 1.8.27(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -3452,8 +3452,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite@5.0.11(@types/node@20.11.5):
-    resolution: {integrity: sha512-XBMnDjZcNAw/G1gEiskiM1v6yzM4GE5aMGvhWTlHAYYhxb7S3/V1s3m2LDHa8Vh6yIWYYB0iJwsEaS523c4oYA==}
+  /vite@5.0.12(@types/node@20.11.5):
+    resolution: {integrity: sha512-4hsnEkG3q0N4Tzf1+t6NdN9dg/L3BM+q8SWgbSPnJvrgH2kgdyzfVJwbR1ic69/4uMJJ/3dqDZZE5/WwqW8U1w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
