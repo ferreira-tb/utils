@@ -26,7 +26,11 @@ export function isEmpty(value?: unknown): boolean {
     return value.size === 0;
   }
 
-  return true;
+  return isNullish(value);
+}
+
+export function isNullish(value: unknown): boolean {
+  return value === null || value === undefined;
 }
 
 export function repeat(amount: number, fn: (current: number) => void): void {
