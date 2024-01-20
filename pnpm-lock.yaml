@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tb-dev/utility-types':
-    specifier: ^1.0.11
-    version: 1.0.11
+    specifier: ^1.1.0
+    version: 1.1.0
 
 devDependencies:
   '@tb-dev/eslint-config':
@@ -765,8 +765,8 @@ packages:
       - vitest
     dev: true
 
-  /@tb-dev/utility-types@1.0.11:
-    resolution: {integrity: sha512-p83S5Hsj7KOXjiGfvLPzyB+KuIlKdRRH9Lxxbx9Z/j3L0JbURuJnu7ZC3TJGL4xN21oJ8dxLcK9TnWpsMSyKjA==}
+  /@tb-dev/utility-types@1.1.0:
+    resolution: {integrity: sha512-naBCrC3/3HkkQ5RUEr52m8rzHLSParSZaj3l8kbZXX7MqJS0UiG77A1Za+4uqGlKfGOAnudaZlgg6iqaURTI6Q==}
     dev: false
 
   /@tufjs/canonical-json@2.0.0:
