@@ -44,7 +44,7 @@
     "@tb-dev/eslint-config": "^1.7.0",
     "@types/node": "^20.11.15",
     "eslint": "^8.56.0",
-    "husky": "^8.0.3",
+    "husky": "^9.0.8",
     "lint-staged": "^15.2.1",
     "prettier": "^3.2.4",
     "taze": "^0.13.2",
