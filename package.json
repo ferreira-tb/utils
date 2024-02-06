@@ -33,7 +33,7 @@
     "format": "prettier . --write",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
-    "prepare": "husky install",
+    "prepare": "husky",
     "release": "pnpm run build && pnpm publish",
     "type-check": "tsc --noEmit"
   },
@@ -41,13 +41,13 @@
     "@tb-dev/utility-types": "^1.1.2"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^1.7.0",
+    "@tb-dev/eslint-config": "^1.8.0",
     "@types/node": "^20.11.16",
     "eslint": "^8.56.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.1",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "taze": "^0.13.2",
+    "taze": "^0.13.3",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.7",
     "typedoc-plugin-mdn-links": "^3.1.15",
