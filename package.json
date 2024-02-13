@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -38,7 +38,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.1.4"
+    "@tb-dev/utility-types": "^1.1.5"
   },
   "devDependencies": {
     "@tb-dev/eslint-config": "^2.0.1",
