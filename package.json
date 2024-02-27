@@ -38,18 +38,18 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.1.6"
+    "@tb-dev/utility-types": "^1.1.7"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^2.0.3",
-    "@types/node": "^20.11.19",
-    "eslint": "^8.56.0",
+    "@tb-dev/eslint-config": "^2.1.2",
+    "@types/node": "^20.11.20",
+    "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
-    "typedoc": "^0.25.8",
-    "typedoc-plugin-mdn-links": "^3.1.16",
+    "typedoc": "^0.25.9",
+    "typedoc-plugin-mdn-links": "^3.1.17",
     "typescript": "5.3.3",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.7.3"
