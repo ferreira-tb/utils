@@ -38,20 +38,20 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.1.7"
+    "@tb-dev/utility-types": "^1.2.0"
   },
   "devDependencies": {
     "@tb-dev/eslint-config": "^2.1.2",
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.11.24",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
-    "typedoc": "^0.25.9",
+    "typedoc": "^0.25.10",
     "typedoc-plugin-mdn-links": "^3.1.17",
     "typescript": "5.3.3",
-    "vite": "^5.1.4",
+    "vite": "^5.1.5",
     "vite-plugin-dts": "^3.7.3"
   },
   "files": [

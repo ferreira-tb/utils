@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@tb-dev/utility-types':
-    specifier: ^1.1.7
+    specifier: ^1.2.0
     version: 1.2.0
 
 devDependencies:
@@ -14,7 +14,7 @@ devDependencies:
     specifier: ^2.1.2
     version: 2.1.2(eslint@8.57.0)(typescript@5.3.3)
   '@types/node':
-    specifier: ^20.11.20
+    specifier: ^20.11.24
     version: 20.11.24
   eslint:
     specifier: ^8.57.0
@@ -32,7 +32,7 @@ devDependencies:
     specifier: ^2.6.2
     version: 2.6.2
   typedoc:
-    specifier: ^0.25.9
+    specifier: ^0.25.10
     version: 0.25.10(typescript@5.3.3)
   typedoc-plugin-mdn-links:
     specifier: ^3.1.17
@@ -41,7 +41,7 @@ devDependencies:
     specifier: 5.3.3
     version: 5.3.3
   vite:
-    specifier: ^5.1.4
+    specifier: ^5.1.5
     version: 5.1.5(@types/node@20.11.24)
   vite-plugin-dts:
     specifier: ^3.7.3
