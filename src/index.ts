@@ -51,6 +51,9 @@ export function repeat(amount: number, fn: (current: number) => void): void {
  * If the value is a string, it is returned unchanged.
  */
 export function toPixel(value: string | number): string {
-  if (typeof value === 'string') return value;
-  return `${value}px`;
+  if (typeof value === 'number' || (typeof value === 'string' && /^\d+(?:\.(\d+))?$/.test(value))) {
+    return `${value}px`;
+  }
+
+  return value;
 }
