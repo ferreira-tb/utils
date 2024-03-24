@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@tb-dev/eslint-config':
-    specifier: ^3.2.2
-    version: 3.2.2(eslint@8.57.0)(typescript@5.4.3)
+    specifier: ^3.2.3
+    version: 3.2.3(eslint@8.57.0)(typescript@5.4.3)
   '@types/node':
     specifier: ^20.11.30
     version: 20.11.30
@@ -41,11 +41,11 @@ devDependencies:
     specifier: ^5.4.3
     version: 5.4.3
   vite:
-    specifier: ^5.2.3
-    version: 5.2.3(@types/node@20.11.30)
+    specifier: ^5.2.6
+    version: 5.2.6(@types/node@20.11.30)
   vite-plugin-dts:
     specifier: ^3.7.3
-    version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3)
+    version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.6)
 
 packages:
 
@@ -578,8 +578,8 @@ packages:
       string-argv: 0.3.2
     dev: true
 
-  /@tb-dev/eslint-config@3.2.2(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-EdO3pTY940b0Y9JN0s3GG8sj5c18PBeQzvqW91X0MQ2rwkqKj/TMLXD0PUwOXghkLm0xugXn78XZ+X9DcnjAqQ==}
+  /@tb-dev/eslint-config@3.2.3(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-Vu1jGj8yJ0JeDbrktwwnDKdhw8YN6NxfILQDoapxVRJLyetLX/csFXGaTZmEfn5msSyx37VRpiTPKhbVrVGK4A==}
     engines: {node: '>=20'}
     peerDependencies:
       eslint: ^8.57.0
@@ -2608,7 +2608,7 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /vite-plugin-dts@3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3):
+  /vite-plugin-dts@3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.6):
     resolution: {integrity: sha512-26eTlBYdpjRLWCsTJebM8vkCieE+p9gP3raf+ecDnzzK5E3FG6VE1wcy55OkRpfWWVlVvKkYFe6uvRHYWx7Nog==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2624,7 +2624,7 @@ packages:
       debug: 4.3.4
       kolorist: 1.8.0
       typescript: 5.4.3
-      vite: 5.2.3(@types/node@20.11.30)
+      vite: 5.2.6(@types/node@20.11.30)
       vue-tsc: 1.8.27(typescript@5.4.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -2632,8 +2632,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite@5.2.3(@types/node@20.11.30):
-    resolution: {integrity: sha512-+i1oagbvkVIhEy9TnEV+fgXsng13nZM90JQbrcPrf6DvW2mXARlz+DK7DLiDP+qeKoD1FCVx/1SpFL1CLq9Mhw==}
+  /vite@5.2.6(@types/node@20.11.30):
+    resolution: {integrity: sha512-FPtnxFlSIKYjZ2eosBQamz4CbyrTizbZ3hnGJlh/wMtCrlp1Hah6AzBLjGI5I2urTfNnpovpHdrL6YRuBOPnCA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:

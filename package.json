@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -35,13 +35,14 @@
     "lint": "eslint . --config eslint.config.js --cache",
     "prepare": "husky",
     "release": "pnpm run build && pnpm publish",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "update": "miho update major -t"
   },
   "dependencies": {
     "@tb-dev/utility-types": "^1.2.3"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.2.2",
+    "@tb-dev/eslint-config": "^3.2.3",
     "@types/node": "^20.11.30",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
@@ -51,7 +52,7 @@
     "typedoc": "^0.25.12",
     "typedoc-plugin-mdn-links": "^3.1.18",
     "typescript": "^5.4.3",
-    "vite": "^5.2.3",
+    "vite": "^5.2.6",
     "vite-plugin-dts": "^3.7.3"
   },
   "files": [
