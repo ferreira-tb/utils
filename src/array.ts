@@ -1,5 +1,17 @@
 import type { MaybeArray, Nullish } from '@tb-dev/utility-types';
 
+export function upsert<T>(array: T[], item: T, predicate: (item: T) => boolean): T[] {
+  const index = array.findIndex(predicate);
+
+  if (index === -1) {
+    array.push(item);
+  } else {
+    array[index] = item;
+  }
+
+  return array;
+}
+
 export function splitWhitespace(value: Nullish<string | string[]>): string[] {
   if (!value) return [];
 
