@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -39,20 +39,20 @@
     "update": "miho update major -t"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.2.4"
+    "@tb-dev/utility-types": "^1.2.5"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.3.1",
-    "@types/node": "^20.11.30",
+    "@tb-dev/eslint-config": "^3.3.2",
+    "@types/node": "^20.12.3",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.12",
-    "typedoc-plugin-mdn-links": "^3.1.18",
+    "typedoc-plugin-mdn-links": "^3.1.19",
     "typescript": "^5.4.3",
-    "vite": "^5.2.7",
+    "vite": "^5.2.8",
     "vite-plugin-dts": "^3.8.1"
   },
   "files": [
