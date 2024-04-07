@@ -29,6 +29,9 @@ export function isNullish(value: unknown): value is null | undefined {
   return value === null || value === undefined;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+export const noop = (): void => {};
+
 /**
  * Add the pixel unit to a value.
  * If the value is a string, it is returned unchanged.
