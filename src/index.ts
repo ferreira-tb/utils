@@ -1,4 +1,7 @@
-import { float as floatRegex } from './regex';
+import { regex } from './regex';
+
+export * from './array';
+export * from './regex';
 
 /**
  * Check if a value is empty.
@@ -37,7 +40,7 @@ export const noop = (): void => {};
  * If the value is a string, it is returned unchanged.
  */
 export function toPixel(value: string | number): string {
-  if (typeof value === 'number' || (typeof value === 'string' && floatRegex.test(value))) {
+  if (typeof value === 'number' || (typeof value === 'string' && regex.float.test(value))) {
     return `${value}px`;
   }
 
