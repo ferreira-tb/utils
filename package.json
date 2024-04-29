@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@8.15.7",
+  "packageManager": "pnpm@9.0.6",
   "homepage": "https://tb.dev.br/utils/",
   "author": {
     "name": "Andrew Ferreira",
@@ -39,7 +39,7 @@
     "update": "miho update major -t"
   },
   "dependencies": {
-    "@tb-dev/utility-types": "^1.2.6"
+    "@tb-dev/utility-types": "^1.2.7"
   },
   "devDependencies": {
     "@tb-dev/eslint-config": "^3.4.0",
@@ -50,10 +50,10 @@
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.13",
-    "typedoc-plugin-mdn-links": "^3.1.21",
+    "typedoc-plugin-mdn-links": "^3.1.23",
     "typescript": "^5.4.5",
-    "vite": "^5.2.8",
-    "vite-plugin-dts": "^3.8.2"
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.0"
   },
   "files": [
     "dist"
