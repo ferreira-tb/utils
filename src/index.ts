@@ -1,10 +1,11 @@
 import { regex } from './regex';
 
 export * from './array';
+export * from './panic';
 export * from './regex';
 
 /**
- * Check if a value is empty.
+ * Checks if a value is empty.
  *
  * Arrays and strings are considered empty if they have a length of 0.
  * Map and Sets are considered empty if they have a size of 0.
@@ -35,10 +36,7 @@ export function isNullish(value: unknown): value is null | undefined {
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 export const noop = (): void => {};
 
-/**
- * Add the pixel unit to a value.
- * If the value is a string, it is returned unchanged.
- */
+/** Adds the pixel unit to a value. */
 export function toPixel(value: string | number): string {
   if (typeof value === 'number' || (typeof value === 'string' && regex.float.test(value))) {
     return `${value}px`;

@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -42,8 +42,8 @@
     "@tb-dev/utility-types": "^1.2.7"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.4.0",
-    "@types/node": "^20.12.7",
+    "@tb-dev/eslint-config": "^3.4.2",
+    "@types/node": "^20.12.8",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -52,7 +52,7 @@
     "typedoc": "^0.25.13",
     "typedoc-plugin-mdn-links": "^3.1.23",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^5.2.11",
     "vite-plugin-dts": "^3.9.0"
   },
   "files": [
@@ -71,6 +71,11 @@
       "types": "./dist/array.d.ts",
       "import": "./dist/array.js",
       "require": "./dist/array.cjs"
+    },
+    "./panic": {
+      "types": "./dist/panic.d.ts",
+      "import": "./dist/panic.js",
+      "require": "./dist/panic.cjs"
     },
     "./regex": {
       "types": "./dist/regex.d.ts",

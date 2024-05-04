@@ -12,6 +12,7 @@ export default defineConfig({
       entry: [
         resolve(__dirname, 'src/index.ts'),
         resolve(__dirname, 'src/array.ts'),
+        resolve(__dirname, 'src/panic.ts'),
         resolve(__dirname, 'src/regex.ts')
       ],
       formats: ['es', 'cjs'],
