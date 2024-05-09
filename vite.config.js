@@ -13,7 +13,9 @@ export default defineConfig({
         resolve(__dirname, 'src/index.ts'),
         resolve(__dirname, 'src/array.ts'),
         resolve(__dirname, 'src/panic.ts'),
-        resolve(__dirname, 'src/regex.ts')
+        resolve(__dirname, 'src/promise.ts'),
+        resolve(__dirname, 'src/regex.ts'),
+        resolve(__dirname, 'src/string.ts')
       ],
       formats: ['es', 'cjs'],
       fileName: (format, entryName) => {
