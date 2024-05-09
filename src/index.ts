@@ -3,6 +3,8 @@ import { regex } from './regex';
 export * from './array';
 export * from './panic';
 export * from './regex';
+export * from './string';
+export * from './promise';
 
 /**
  * Checks if a value is empty.

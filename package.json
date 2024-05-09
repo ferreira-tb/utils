@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/utils",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "homepage": "https://tb.dev.br/utils/",
   "author": {
     "name": "Andrew Ferreira",
@@ -33,6 +33,7 @@
     "format": "prettier . --write",
     "format-check": "prettier . --check",
     "lint": "eslint . --config eslint.config.js --cache",
+    "lint-fix": "eslint . --config eslint.config.js --cache --fix",
     "prepare": "husky",
     "release": "pnpm run build && pnpm publish",
     "type-check": "tsc --noEmit",
@@ -42,18 +43,18 @@
     "@tb-dev/utility-types": "^1.2.7"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.4.2",
-    "@types/node": "^20.12.8",
+    "@tb-dev/eslint-config": "^3.5.1",
+    "@types/node": "^20.12.11",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.13",
-    "typedoc-plugin-mdn-links": "^3.1.23",
+    "typedoc-plugin-mdn-links": "^3.1.24",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
-    "vite-plugin-dts": "^3.9.0"
+    "vite-plugin-dts": "^3.9.1"
   },
   "files": [
     "dist"
@@ -77,10 +78,20 @@
       "import": "./dist/panic.js",
       "require": "./dist/panic.cjs"
     },
+    "./promise": {
+      "types": "./dist/promise.d.ts",
+      "import": "./dist/promise.js",
+      "require": "./dist/promise.cjs"
+    },
     "./regex": {
       "types": "./dist/regex.d.ts",
       "import": "./dist/regex.js",
       "require": "./dist/regex.cjs"
+    },
+    "./string": {
+      "types": "./dist/string.d.ts",
+      "import": "./dist/string.js",
+      "require": "./dist/string.cjs"
     }
   }
 }
