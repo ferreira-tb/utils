@@ -1,6 +1,6 @@
 const scheduler = typeof setImmediate === 'function' ? setImmediate : setTimeout;
 
-export function flush(): Promise<void> {
+export function flushPromises(): Promise<void> {
   return new Promise((resolve) => void scheduler(resolve, 0));
 }
 
