@@ -36,7 +36,7 @@ export function isNullish(value: unknown): value is null | undefined {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
-export const noop = (..._: any[]): void => {};
+export const noop = (): void => {};
 
 /** Adds the pixel unit to a value. */
 export function toPixel(value: string | number): string {
