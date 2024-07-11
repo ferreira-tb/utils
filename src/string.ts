@@ -1,5 +1,5 @@
 import { trimArray } from './array';
-import type { Nullish } from '@tb-dev/utility-types';
+import type { Nullish } from './types';
 
 export function splitWhitespace(value: Nullish<string | string[]>): string[] {
   if (!value) return [];

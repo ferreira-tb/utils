@@ -3,6 +3,7 @@ import { regex } from './regex';
 export * from './array';
 export * from './panic';
 export * from './regex';
+export * from './types';
 export * from './string';
 export * from './promise';
 

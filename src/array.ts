@@ -1,4 +1,4 @@
-import type { MaybeArray, Nullish } from '@tb-dev/utility-types';
+import type { MaybeArray, Nullish } from './types';
 
 /** Pushes an item to the array if it doesn't exist, otherwise updates it. */
 export function upsert<T>(array: T[], item: T, predicate: (value: T) => boolean): void {
