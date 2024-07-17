@@ -1,3 +1,4 @@
+/** Throws an error with the given message. */
 export function panic(...args: any[]): never {
   throw new Error(args[0]);
 }

@@ -1,6 +1,16 @@
 import { trimArray } from './array';
 import type { Nullish } from './types';
 
+/**
+ * Splits a string or an array of strings (recursively) by whitespace.
+ *
+ * @example
+ * ```ts
+ * splitWhitespace('a b c'); // ['a', 'b', 'c']
+ * splitWhitespace(['a b', 'c']); // ['a', 'b', 'c']
+ * splitWhitespace(['a ', ['b', ['c d']]]); // ['a', 'b', 'c', 'd']
+ * ```
+ */
 export function splitWhitespace(value: Nullish<string | string[]>): string[] {
   if (!value) return [];
 
