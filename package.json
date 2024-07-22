@@ -40,7 +40,7 @@
     "update": "miho update major -t"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^4.1.0",
+    "@tb-dev/eslint-config": "^4.1.1",
     "@types/node": "^20.14.11",
     "eslint": "^8.57.0",
     "husky": "^9.1.1",
