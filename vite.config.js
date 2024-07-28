@@ -16,12 +16,12 @@ export default defineConfig({
         resolve(__dirname, 'src/promise.ts'),
         resolve(__dirname, 'src/regex.ts'),
         resolve(__dirname, 'src/string.ts'),
-        resolve(__dirname, 'src/types.ts')
+        resolve(__dirname, 'src/types.ts'),
       ],
       formats: ['es', 'cjs'],
       fileName: (format, entryName) => {
         return format === 'es' ? `${entryName}.js` : `${entryName}.cjs`;
-      }
-    }
-  }
+      },
+    },
+  },
 });

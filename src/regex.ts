@@ -1,5 +1,5 @@
 const float = /^\d+(?:\.(\d+))?$/;
 
 export const regex = {
-  float
+  float,
 } as const;

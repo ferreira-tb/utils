@@ -4,5 +4,5 @@ module.exports = {
   out: 'docs',
   includeVersion: true,
   githubPages: false,
-  titleLink: 'https://tb.dev.br/utils/'
+  titleLink: 'https://tb.dev.br/utils/',
 };

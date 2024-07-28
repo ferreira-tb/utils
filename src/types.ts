@@ -24,9 +24,7 @@ export type PartialNullish<T> = {
   [P in keyof T]?: Nullish<T[P]>;
 };
 
-/**
- * Like `Pick`, but constructs the type based on the values.
- */
+/** Like `Pick`, but constructs the type based on the values. */
 export type PickByValue<T, V> = {
   [P in keyof T as T[P] extends V ? P : never]: T[P];
 };
@@ -37,6 +35,7 @@ export type PickPartial<T, K extends keyof T> = Pick<Partial<T>, K>;
 /** Constructs a type by picking the set of properties `K` from a required version of `T`. */
 export type PickRequired<T, K extends keyof T> = Pick<Required<T>, K>;
 
+/** Constructs a type where all properties of `T` are strings. */
 export type StringifyObject<T> = {
   [P in keyof T]: string;
 };
