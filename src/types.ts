@@ -19,6 +19,11 @@ export type MaybeSet<T> = T | Set<T>;
 /** Something may be nullish. */
 export type Nullish<T> = T | null | undefined;
 
+/** Constructs a type where all properties of `T` may be null. */
+export type PartialNull<T> = {
+  [P in keyof T]: T[P] | null;
+};
+
 /** Constructs a type where all properties of `T` may be nullish. */
 export type PartialNullish<T> = {
   [P in keyof T]?: Nullish<T[P]>;
