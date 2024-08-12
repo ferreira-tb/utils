@@ -1,19 +1,25 @@
 /** Throws an error with the given message. */
 export function panic(...args: any[]): never {
-  throw new Error(args[0]);
+  throw new Error(args.join(' '));
 }
 
 export function todo(...args: any[]): never {
-  const message = typeof args[0] === 'string' ? args[0] : 'todo';
-  panic(message);
+  panic(format('TODO', args));
 }
 
 export function unimplemented(...args: any[]): never {
-  const message = typeof args[0] === 'string' ? args[0] : 'not implemented';
-  panic(message);
+  panic(format('not implemented', args));
 }
 
 export function unreachable(...args: any[]): never {
-  const message = typeof args[0] === 'string' ? args[0] : 'unreachable';
-  panic(message);
+  panic(format('unreachable', args));
+}
+
+function format(base: string, args: any[]): string {
+  let message = base;
+  if (args.length > 0) {
+    message = `${message}: ${args.join(' ')}`;
+  }
+
+  return message;
 }

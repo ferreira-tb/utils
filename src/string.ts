@@ -15,7 +15,7 @@ export function splitWhitespace(value: Nullish<string | string[]>): string[] {
   if (!value) return [];
 
   if (Array.isArray(value)) {
-    const array = value.map((i) => splitWhitespace(i));
+    const array = value.map((it) => splitWhitespace(it));
     return array.flat(Number.POSITIVE_INFINITY) as string[];
   }
 
