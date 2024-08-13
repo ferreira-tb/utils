@@ -1,5 +1,7 @@
 import { regex } from './regex';
+import { isNullish } from './nil';
 
+export * from './nil';
 export * from './array';
 export * from './panic';
 export * from './regex';
@@ -30,10 +32,6 @@ export function isEmpty(value?: unknown): boolean {
   }
 
   return false;
-}
-
-export function isNullish(value: unknown): value is null | undefined {
-  return value === undefined || value === null;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
