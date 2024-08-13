@@ -1,5 +1,5 @@
-import { trimArray } from './array';
-import type { Nullish } from './types';
+import type { Nullish } from '../types';
+import { trimArray } from '../array/trim-array';
 
 /**
  * Splits a string or an array of strings (recursively) by whitespace.

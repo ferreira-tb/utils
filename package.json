@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -24,8 +24,7 @@
     "typescript"
   ],
   "lint-staged": {
-    "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write",
-    "*.{?(c|m)@(j|t)s,vue}": "pnpm run lint"
+    "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write"
   },
   "scripts": {
     "build": "vite build",
@@ -36,12 +35,15 @@
     "lint-fix": "eslint . --config eslint.config.js --fix",
     "prepare": "husky",
     "release": "pnpm run build && pnpm publish",
+    "test": "vitest",
+    "test:ui": "vitest --ui --watch",
     "type-check": "tsc --noEmit",
     "update": "miho update major -t"
   },
   "devDependencies": {
     "@tb-dev/eslint-config": "^5.2.0",
     "@types/node": "^22.2.0",
+    "@vitest/ui": "^2.0.5",
     "eslint": "^9.9.0",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",
@@ -51,7 +53,8 @@
     "typedoc-plugin-mdn-links": "^3.2.8",
     "typescript": "^5.5.4",
     "vite": "^5.4.0",
-    "vite-plugin-dts": "^3.9.1"
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^2.0.5"
   },
   "files": [
     "dist"
@@ -64,36 +67,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./array": {
-      "types": "./dist/array.d.ts",
-      "import": "./dist/array.js",
-      "require": "./dist/array.cjs"
-    },
-    "./panic": {
-      "types": "./dist/panic.d.ts",
-      "import": "./dist/panic.js",
-      "require": "./dist/panic.cjs"
-    },
-    "./promise": {
-      "types": "./dist/promise.d.ts",
-      "import": "./dist/promise.js",
-      "require": "./dist/promise.cjs"
-    },
-    "./regex": {
-      "types": "./dist/regex.d.ts",
-      "import": "./dist/regex.js",
-      "require": "./dist/regex.cjs"
-    },
-    "./string": {
-      "types": "./dist/string.d.ts",
-      "import": "./dist/string.js",
-      "require": "./dist/string.cjs"
-    },
-    "./types": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/types.js",
-      "require": "./dist/types.cjs"
     }
   }
 }

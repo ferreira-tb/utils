@@ -19,6 +19,7 @@ target
 **/.vitepress/temp
 **/.vitepress/cache
 **/*vite*timestamp*
+html
 
 # Editor directories and files
 .vscode/*
