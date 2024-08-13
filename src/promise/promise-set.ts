@@ -1,7 +1,7 @@
-export class PromiseChain {
+export class PromiseSet {
   private readonly promises = new Set<Promise<any>>();
 
-  public chain(promise: Promise<any>): this {
+  public and(promise: Promise<any>): this {
     this.promises.add(promise);
     return this;
   }
@@ -9,9 +9,5 @@ export class PromiseChain {
   public async join(): Promise<void> {
     await Promise.all(this.promises);
     this.promises.clear();
-  }
-
-  public static create(): PromiseChain {
-    return new PromiseChain();
   }
 }
