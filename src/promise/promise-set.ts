@@ -10,4 +10,13 @@ export class PromiseSet {
     await Promise.all(this.promises);
     this.promises.clear();
   }
+
+  public static from(promises: Iterable<Promise<any>>): PromiseSet {
+    const set = new PromiseSet();
+    for (const promise of promises) {
+      set.promises.add(promise);
+    }
+
+    return set;
+  }
 }
