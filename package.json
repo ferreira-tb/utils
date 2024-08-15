@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -53,7 +53,7 @@
     "typedoc-plugin-mdn-links": "^3.2.8",
     "typescript": "^5.5.4",
     "vite": "^5.4.0",
-    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-dts": "^4.0.3",
     "vitest": "^2.0.5"
   },
   "files": [

@@ -40,6 +40,8 @@ export type PickPartial<T, K extends keyof T> = Pick<Partial<T>, K>;
 /** Constructs a type by picking the set of properties `K` from a required version of `T`. */
 export type PickRequired<T, K extends keyof T> = Pick<Required<T>, K>;
 
+export type Writeable<T> = { -readonly [P in keyof T]: T[P] };
+
 /** Constructs a type consisting of some properties of T set to partial. */
 export type WithPartial<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 
