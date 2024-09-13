@@ -4,7 +4,7 @@ export function panic(...args: any[]): never {
 }
 
 export function todo(...args: any[]): never {
-  panic(format('TODO', args));
+  panic(format('not yet implemented', args));
 }
 
 export function unimplemented(...args: any[]): never {

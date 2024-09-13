@@ -6,7 +6,7 @@ test('panic', () => {
 });
 
 test('todo', () => {
-  expect(() => todo()).toThrowError('TODO');
+  expect(() => todo()).toThrowError('not yet implemented');
 });
 
 test('unimplemented', () => {
