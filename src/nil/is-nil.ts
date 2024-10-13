@@ -1,4 +1,6 @@
-export function isNil(value: unknown): value is null | undefined {
+import type { Nil } from '../types';
+
+export function isNil(value: unknown): value is Nil {
   return value === undefined || value === null;
 }
 

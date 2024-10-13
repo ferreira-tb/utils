@@ -8,6 +8,7 @@ export * from './regex';
 export * from './types';
 export * from './string';
 export * from './promise';
+export * from './function';
 
 /**
  * Checks if a value is empty.
@@ -33,9 +34,6 @@ export function isEmpty(value?: unknown): boolean {
 
   return false;
 }
-
-// eslint-disable-next-line @typescript-eslint/no-empty-function
-export const noop = (): void => {};
 
 /** Adds the pixel unit to a value. */
 export function toPixel(value: string | number): string {

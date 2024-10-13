@@ -27,11 +27,11 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       typedoc:
-        specifier: ^0.26.8
-        version: 0.26.8(typescript@5.6.3)
+        specifier: ^0.26.9
+        version: 0.26.9(typescript@5.6.3)
       typedoc-plugin-mdn-links:
-        specifier: ^3.3.2
-        version: 3.3.2(typedoc@0.26.8(typescript@5.6.3))
+        specifier: ^3.3.3
+        version: 3.3.3(typedoc@0.26.9(typescript@5.6.3))
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -39,8 +39,8 @@ importers:
         specifier: ^5.4.8
         version: 5.4.8(@types/node@22.7.5)
       vite-plugin-dts:
-        specifier: ^4.2.3
-        version: 4.2.3(@types/node@22.7.5)(rollup@4.22.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5))
+        specifier: ^4.2.4
+        version: 4.2.4(@types/node@22.7.5)(rollup@4.22.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5))
       vitest:
         specifier: ^2.1.2
         version: 2.1.2(@types/node@22.7.5)(@vitest/ui@2.1.2)
@@ -1745,13 +1745,13 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  typedoc-plugin-mdn-links@3.3.2:
-    resolution: {integrity: sha512-5CGxkdfsG4Yki6UsFOvVN8vWXXDb25SozOlyThk9Dq8JvKcUgY+Ra+cZvkFWs3hLlO4W8xpFbYQxNngCLf9MMA==}
+  typedoc-plugin-mdn-links@3.3.3:
+    resolution: {integrity: sha512-XIYQsaTeIScwpkFZg+yXR2s0V/D5UlY11AbPjIEgZ2g8aE+IYUn4Ci4cUFRcZpWqQfjfAj2XcJG3tRejCBPisw==}
     peerDependencies:
       typedoc: '>= 0.23.14 || 0.24.x || 0.25.x || 0.26.x'
 
-  typedoc@0.26.8:
-    resolution: {integrity: sha512-QBF0BMbnNeUc6U7pRHY7Jb8pjhmiNWZNQT8LU6uk9qP9t3goP9bJptdlNqMC0wBB2w9sQrxjZt835bpRSSq1LA==}
+  typedoc@0.26.9:
+    resolution: {integrity: sha512-Rc7QpWL7EtmrT8yxV0GmhOR6xHgFnnhphbD9Suti3fz3um7ZOrou6q/g9d6+zC5PssTLZmjaW4Upmzv8T1rCcQ==}
     engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
@@ -1821,8 +1821,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-dts@4.2.3:
-    resolution: {integrity: sha512-O5NalzHANQRwVw1xj8KQun3Bv8OSDAlNJXrnqoAz10BOuW8FVvY5g4ygj+DlJZL5mtSPuMu9vd3OfrdW5d4k6w==}
+  vite-plugin-dts@4.2.4:
+    resolution: {integrity: sha512-REcYoxO90Pi8c0P1J7XAa/nVwNVGkX2eYkBEIfFSfcKE4g1W8sB0R23a7SU3aLEMfdOdb0SVHq3JlJ+Qb6gjgA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
@@ -3640,11 +3640,11 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  typedoc-plugin-mdn-links@3.3.2(typedoc@0.26.8(typescript@5.6.3)):
+  typedoc-plugin-mdn-links@3.3.3(typedoc@0.26.9(typescript@5.6.3)):
     dependencies:
-      typedoc: 0.26.8(typescript@5.6.3)
+      typedoc: 0.26.9(typescript@5.6.3)
 
-  typedoc@0.26.8(typescript@5.6.3):
+  typedoc@0.26.9(typescript@5.6.3):
     dependencies:
       lunr: 2.3.9
       markdown-it: 14.1.0
@@ -3732,7 +3732,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-dts@4.2.3(@types/node@22.7.5)(rollup@4.22.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5)):
+  vite-plugin-dts@4.2.4(@types/node@22.7.5)(rollup@4.22.4)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5)):
     dependencies:
       '@microsoft/api-extractor': 7.47.7(@types/node@22.7.5)
       '@rollup/pluginutils': 5.1.2(rollup@4.22.4)

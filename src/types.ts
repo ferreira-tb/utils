@@ -16,8 +16,11 @@ export type MaybePromise<T> = T | PromiseLike<T>;
 /** Something may be a Set. */
 export type MaybeSet<T> = T | Set<T>;
 
+/** Null or undefined. */
+export type Nil = null | undefined;
+
 /** Something may be nullish. */
-export type Nullish<T> = T | null | undefined;
+export type Nullish<T> = T | Nil;
 
 /** Constructs a type where all properties of `T` may be null. */
 export type PartialNull<T> = {
