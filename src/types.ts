@@ -49,5 +49,5 @@ export type Writeable<T> = { -readonly [P in keyof T]: T[P] };
 /** Constructs a type consisting of some properties of T set to partial. */
 export type WithPartial<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 
-/** Constructs a type consisting of some properties of T set to partial. */
+/** Constructs a type consisting of some properties of T set to required. */
 export type WithRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
