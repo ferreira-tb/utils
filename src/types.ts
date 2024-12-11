@@ -22,6 +22,9 @@ export type Nil = null | undefined;
 /** Something may be nullish. */
 export type Nullish<T> = T | Nil;
 
+/** Something may be nullish. */
+export type Option<T> = Nullish<T>;
+
 /** Constructs a type where all properties of `T` may be null. */
 export type PartialNull<T> = {
   [P in keyof T]: T[P] | null;
