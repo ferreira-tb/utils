@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@tb-dev/eslint-config':
-        specifier: ^5.4.22
+        specifier: ^5.7.7
         version: 5.7.7(eslint@9.17.0(jiti@1.21.7))(tailwindcss@3.4.7)(typescript@5.7.2)
       '@types/node':
         specifier: ^22.10.2
@@ -18,7 +18,7 @@ importers:
         specifier: ^2.1.8
         version: 2.1.8(vitest@2.1.8)
       eslint:
-        specifier: ^9.16.0
+        specifier: ^9.17.0
         version: 9.17.0(jiti@1.21.7)
       prettier:
         specifier: ^3.4.2
@@ -27,19 +27,19 @@ importers:
         specifier: ^2.8.1
         version: 2.8.1
       typedoc:
-        specifier: ^0.27.4
+        specifier: ^0.27.5
         version: 0.27.5(typescript@5.7.2)
       typedoc-plugin-mdn-links:
-        specifier: ^4.0.4
+        specifier: ^4.0.6
         version: 4.0.6(typedoc@0.27.5(typescript@5.7.2))
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.3
+        specifier: ^6.0.5
         version: 6.0.5(@types/node@22.10.2)(jiti@1.21.7)(yaml@2.6.1)
       vite-plugin-dts:
-        specifier: ^4.3.0
+        specifier: ^4.4.0
         version: 4.4.0(@types/node@22.10.2)(rollup@4.29.1)(typescript@5.7.2)(vite@6.0.5(@types/node@22.10.2)(jiti@1.21.7)(yaml@2.6.1))
       vitest:
         specifier: ^2.1.8
