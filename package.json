@@ -37,7 +37,7 @@
     "update": "miho update major -t"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^5.7.7",
+    "@tb-dev/eslint-config": "^6.0.1",
     "@types/node": "^22.10.2",
     "@vitest/ui": "^2.1.8",
     "eslint": "^9.17.0",
