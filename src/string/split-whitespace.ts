@@ -1,4 +1,4 @@
-import type { Nullish } from '../types';
+import type { Option } from '../types';
 import { trimArray, type TrimArrayOptions } from '../array/trim-array';
 
 export type SplitWhitespaceOptions = TrimArrayOptions;
@@ -13,7 +13,7 @@ export type SplitWhitespaceOptions = TrimArrayOptions;
  * splitWhitespace(['a ', ['b', ['c d']]]); // ['a', 'b', 'c', 'd']
  * ```
  */
-export function splitWhitespace(value: Nullish<string | string[]>, options: SplitWhitespaceOptions = {}): string[] {
+export function splitWhitespace(value: Option<string | string[]>, options: SplitWhitespaceOptions = {}): string[] {
   if (!value) return [];
 
   if (Array.isArray(value)) {
