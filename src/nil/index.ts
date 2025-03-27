@@ -1,1 +1,1 @@
-export { isNil, isNullish } from './is-nil';
+export * from './is-nil';

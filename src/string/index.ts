@@ -1,1 +1,1 @@
-export { splitWhitespace, type SplitWhitespaceOptions } from './split-whitespace';
+export * from './split-whitespace';

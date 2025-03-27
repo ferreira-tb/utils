@@ -1,3 +1,4 @@
-export { sleep } from './sleep';
-export { PromiseSet } from './promise-set';
-export { flushPromises } from './flush-promises';
+/* eslint-disable perfectionist/sort-exports */
+export * from './flush-promises';
+export * from './promise-set';
+export * from './sleep';

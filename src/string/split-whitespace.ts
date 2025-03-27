@@ -14,13 +14,15 @@ export type SplitWhitespaceOptions = TrimArrayOptions;
  * ```
  */
 export function splitWhitespace(value: Option<string | string[]>, options: SplitWhitespaceOptions = {}): string[] {
-  if (!value) return [];
+  if (value) {
+    if (Array.isArray(value)) {
+      const array = value.map((it) => splitWhitespace(it, options));
+      return array.flat(Number.POSITIVE_INFINITY) as string[];
+    }
 
-  if (Array.isArray(value)) {
-    const array = value.map((it) => splitWhitespace(it, options));
-    return array.flat(Number.POSITIVE_INFINITY) as string[];
+    value = value.trim().split(/\s/);
+    return trimArray(value, options);
   }
 
-  value = value.trim().split(/\s/);
-  return trimArray(value, options);
+  return [];
 }
