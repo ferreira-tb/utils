@@ -14,7 +14,7 @@ export default defineConfig({
     emptyOutDir: true,
     minify: false,
     lib: {
-      entry: join(__dirname, 'src/index.ts'),
+      entry: join(import.meta.dirname, 'src/index.ts'),
       formats: ['es'],
       fileName: 'index',
     },
