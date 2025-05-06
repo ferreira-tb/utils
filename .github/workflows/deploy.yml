@@ -1,4 +1,4 @@
-name: Deploy docs
+name: Deploy
 
 on:
   push:
@@ -28,8 +28,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - run: pnpm install
       - run: |
+          pnpm install
           pnpm run docs
           touch docs/.nojekyll
 
