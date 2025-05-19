@@ -12,10 +12,11 @@ export type MaybeArray<T> = T | T[];
 export type MaybePromise<T> = T | PromiseLike<T>;
 
 /** Null or undefined. */
-export type Nil = null | undefined;
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export type nil = null | undefined;
 
 /** Something may be nullish. */
-export type Option<T> = T | Nil;
+export type Option<T> = T | nil;
 
 /** Constructs a type where all properties of `T` may be null. */
 export type PartialNull<T> = {
