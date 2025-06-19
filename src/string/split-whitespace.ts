@@ -13,7 +13,10 @@ export type SplitWhitespaceOptions = TrimArrayOptions;
  * splitWhitespace(['a ', ['b', ['c d']]]); // ['a', 'b', 'c', 'd']
  * ```
  */
-export function splitWhitespace(value: Option<string | string[]>, options: SplitWhitespaceOptions = {}): string[] {
+export function splitWhitespace(
+  value: Option<string | string[]>,
+  options: SplitWhitespaceOptions = {}
+): string[] {
   if (value) {
     if (Array.isArray(value)) {
       const array = value.map((it) => splitWhitespace(it, options));
