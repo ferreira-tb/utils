@@ -13,6 +13,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     minify: false,
+    target: 'esnext',
     lib: {
       entry: join(import.meta.dirname, 'src/index.ts'),
       formats: ['es'],

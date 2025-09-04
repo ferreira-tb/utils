@@ -15,7 +15,7 @@ export type SplitWhitespaceOptions = TrimArrayOptions;
  */
 export function splitWhitespace(
   value: Option<string | string[]>,
-  options: SplitWhitespaceOptions = {}
+  options: SplitWhitespaceOptions = {},
 ): string[] {
   if (value) {
     if (Array.isArray(value)) {

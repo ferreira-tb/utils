@@ -40,13 +40,17 @@ export type PickPartial<T, K extends keyof T> = Pick<Partial<T>, K>;
 export type PickRequired<T, K extends keyof T> = Pick<Required<T>, K>;
 
 /** Constructs a type where all properties of `T` may be written. */
-export type Writable<T> = { -readonly [P in keyof T]: T[P] };
+export type Writable<T> = { -readonly [P in keyof T]: T[P]; };
 
 /** Constructs a type where all properties of `T` may be written and nullish. */
 export type WritablePartial<T> = Writable<PartialNullish<T>>;
 
 /** Constructs a type consisting of some properties of T set to partial. */
-export type WithPartial<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
+export type WithPartial<T, K extends keyof T> =
+  & Omit<T, K>
+  & Partial<Pick<T, K>>;
 
 /** Constructs a type consisting of some properties of T set to required. */
-export type WithRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
+export type WithRequired<T, K extends keyof T> =
+  & Omit<T, K>
+  & Required<Pick<T, K>>;
