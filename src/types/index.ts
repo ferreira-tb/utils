@@ -11,6 +11,9 @@ export type MaybeArray<T> = T | T[];
 /** Something may be a promise. */
 export type MaybePromise<T> = T | PromiseLike<T>;
 
+/** Something may be a readonly array. */
+export type MaybeReadonlyArray<T> = T | readonly T[];
+
 /** Null or undefined. */
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export type nil = null | undefined;
