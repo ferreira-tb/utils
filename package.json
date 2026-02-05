@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -35,8 +35,8 @@
     "update": "miho update major -t"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^8.2.5",
-    "@types/node": "^25.1.0",
+    "@tb-dev/eslint-config": "^8.2.6",
+    "@types/node": "^25.2.1",
     "@vitest/ui": "^4.0.18",
     "eslint": "^9.39.2",
     "tslib": "^2.8.1",
