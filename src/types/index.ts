@@ -53,6 +53,10 @@ export type WithPartial<T, K extends keyof T> =
   & Omit<T, K>
   & Partial<Pick<T, K>>;
 
+export type WithPartialNullish<T, K extends keyof T> =
+  & Omit<T, K>
+  & PartialNullish<Pick<T, K>>;
+
 /** Constructs a type consisting of some properties of T set to required. */
 export type WithRequired<T, K extends keyof T> =
   & Omit<T, K>
