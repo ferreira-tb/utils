@@ -27,7 +27,8 @@
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmitOnError": true
-  },
-  "types": ["node"]
+    "noEmitOnError": true,
+
+    "types": ["node"]
+  }
 }
