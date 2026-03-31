@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "7.3.12",
+  "version": "7.3.13",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -50,10 +50,10 @@
     "dist"
   ],
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/src/index.d.ts",
       "import": "./dist/index.js"
     }
   }
