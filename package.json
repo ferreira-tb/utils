@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "7.3.9",
+  "version": "7.3.10",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
@@ -34,14 +34,14 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^9.1.0",
+    "@tb-dev/eslint-config": "^9.1.1",
     "@types/node": "^25.5.0",
     "@vitest/ui": "^4.1.2",
     "eslint": "^10.1.0",
     "tslib": "^2.8.1",
     "typedoc": "^0.28.18",
     "typedoc-plugin-mdn-links": "^5.1.1",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vite": "^8.0.3",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.1.2"
