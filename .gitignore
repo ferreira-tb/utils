@@ -30,4 +30,5 @@ html
 *.sln
 *.sw?
 
+docs
 config.json
