@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/utils",
-  "version": "7.3.17",
+  "version": "7.3.18",
   "description": "TypeScript utils",
   "license": "MIT",
   "type": "module",
