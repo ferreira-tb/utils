@@ -1,5 +1,5 @@
-import type { Option } from '../types';
-import { trimArray, type TrimArrayOptions } from '../array/trim-array';
+import type { Option } from "../types";
+import { trimArray, type TrimArrayOptions } from "../array/trim-array";
 
 export type SplitWhitespaceOptions = TrimArrayOptions;
 

@@ -1,10 +1,10 @@
-import { panic } from '../panic';
-import { isNil } from '../nil/is-nil';
-import type { Option } from '../types';
+import { panic } from "../panic";
+import { isNil } from "../nil/is-nil";
+import type { Option } from "../types";
 
 export function unwrap<T>(
   value: Option<T>,
-  message = '`unwrap` called with a nil value',
+  message = "`unwrap` called with a nil value",
 ): T {
   return isNil(value) ? panic(message) : value;
 }

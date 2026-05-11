@@ -7,7 +7,7 @@
     "nextControlFlowPosition": "nextLine",
     "operatorPosition": "sameLine",
     "quoteProps": "asNeeded",
-    "quoteStyle": "alwaysSingle",
+    "quoteStyle": "alwaysDouble",
     "semiColons": "always",
     "trailingCommas": "onlyMultiLine",
     "module.sortExportDeclarations": "maintain",

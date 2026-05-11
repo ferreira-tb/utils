@@ -1,22 +1,22 @@
-import { join } from 'node:path';
-import dts from 'unplugin-dts/vite';
-import { defineConfig } from 'vite';
+import { join } from "node:path";
+import dts from "unplugin-dts/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [
     dts({
-      rollupTypes: false,
-      exclude: ['node_modules/**', 'test/**/*'],
+      bundleTypes: false,
+      exclude: ["node_modules/**", "test/**/*"],
     }),
   ],
   build: {
-    outDir: 'dist',
+    outDir: "dist",
     emptyOutDir: true,
     minify: false,
     lib: {
-      entry: join(import.meta.dirname, 'src/index.ts'),
-      formats: ['es'],
-      fileName: 'index',
+      entry: join(import.meta.dirname, "src/index.ts"),
+      formats: ["es"],
+      fileName: "index",
     },
   },
 });

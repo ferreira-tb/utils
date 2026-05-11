@@ -1,1 +1,1 @@
-export * from './split-whitespace';
+export * from "./split-whitespace";

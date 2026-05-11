@@ -1,7 +1,7 @@
-import { expect, test } from 'vitest';
-import { toArray, trimArray, upsert } from '../src/array';
+import { expect, test } from "vitest";
+import { toArray, trimArray, upsert } from "../src/array";
 
-test('toArray', () => {
+test("toArray", () => {
   expect(toArray()).toEqual([]);
   expect(toArray(null)).toEqual([]);
   expect(toArray(undefined)).toEqual([]);
@@ -10,11 +10,11 @@ test('toArray', () => {
   expect(toArray([1])).toEqual([1]);
 });
 
-test('trimArray', () => {
-  expect(trimArray([' a ', ' b', ''])).toEqual(['a', 'b']);
+test("trimArray", () => {
+  expect(trimArray([" a ", " b", ""])).toEqual(["a", "b"]);
 });
 
-test('upsert', () => {
+test("upsert", () => {
   const array = [1, 2, 3];
 
   upsert(array, 4);

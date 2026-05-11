@@ -1,4 +1,4 @@
-import { flushPromises } from './flush-promises';
+import { flushPromises } from "./flush-promises";
 
 export class PromiseSet {
   private readonly promises = new Set<Promise<any>>();
