@@ -10,8 +10,8 @@ importers:
   .:
     devDependencies:
       '@tb-dev/eslint-config':
-        specifier: ^10.1.0
-        version: 10.1.0(eslint@10.6.0)(typescript@6.0.3)
+        specifier: ^10.1.1
+        version: 10.1.1(eslint@10.6.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^26.0.1
         version: 26.0.1
@@ -264,8 +264,8 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@tb-dev/eslint-config@10.1.0':
-    resolution: {integrity: sha512-sTBXqXKwsVlH0qqscQBNxO+nhyaehg9/hqYQg/Bk7P/bnnZXIGDqQMXP9tKaXsL9A0Ti63hRmZX746cNvnOpgQ==}
+  '@tb-dev/eslint-config@10.1.1':
+    resolution: {integrity: sha512-k0C0q2vxzEO7PAB1a6Mu1X98iAczIqK2vKCYs144Z0vkoH0Vp3Z/uWuF5uu+Yzj/E9dOco2vMOEUFU7uKXZ45g==}
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
@@ -1360,7 +1360,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tb-dev/eslint-config@10.1.0(eslint@10.6.0)(typescript@6.0.3)':
+  '@tb-dev/eslint-config@10.1.1(eslint@10.6.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1)(eslint@10.6.0)(typescript@6.0.3)
       '@typescript-eslint/parser': 8.62.1(eslint@10.6.0)(typescript@6.0.3)

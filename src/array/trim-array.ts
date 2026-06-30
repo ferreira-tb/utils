@@ -1,8 +1,8 @@
 export interface TrimArrayOptions {
   /**
-   * Whether to allow empty strings.
-   * @default false
-   */
+  Whether to allow empty strings.
+  @default false
+  */
   allowEmpty?: boolean;
 }
 

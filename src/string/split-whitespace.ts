@@ -4,15 +4,15 @@ import { trimArray, type TrimArrayOptions } from "../array/trim-array";
 export type SplitWhitespaceOptions = TrimArrayOptions;
 
 /**
- * Splits a string or an array of strings (recursively) by whitespace.
- *
- * @example
- * ```ts
- * splitWhitespace('a b c'); // ['a', 'b', 'c']
- * splitWhitespace(['a b', 'c']); // ['a', 'b', 'c']
- * splitWhitespace(['a ', ['b', ['c d']]]); // ['a', 'b', 'c', 'd']
- * ```
- */
+Splits a string or an array of strings (recursively) by whitespace.
+
+@example
+```ts
+splitWhitespace('a b c'); // ['a', 'b', 'c']
+splitWhitespace(['a b', 'c']); // ['a', 'b', 'c']
+splitWhitespace(['a ', ['b', ['c d']]]); // ['a', 'b', 'c', 'd']
+```
+*/
 export function splitWhitespace(
   value: Option<string | string[]>,
   options: SplitWhitespaceOptions = {},
