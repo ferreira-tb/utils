@@ -1,6 +1,6 @@
 import { panic } from "../panic";
-import { isNil } from "../nil/is-nil";
 import type { Option } from "../types";
+import { isNil } from "es-toolkit/predicate";
 
 export function unwrap<T>(
   value: Option<T>,

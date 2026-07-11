@@ -18,5 +18,8 @@ export default defineConfig({
       formats: ["es"],
       fileName: "index",
     },
+    rolldownOptions: {
+      external: [/^es-toolkit/],
+    },
   },
 });
