@@ -1,7 +1,5 @@
 /* eslint-disable perfectionist/sort-exports */
 export * from "./array";
-export * from "./function";
-export * from "./nil";
 export * from "./option";
 export * from "./panic";
 export * from "./promise";
