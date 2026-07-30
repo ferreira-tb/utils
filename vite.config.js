@@ -5,8 +5,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [
     dts({
+      entryRoot: "src",
       bundleTypes: false,
-      exclude: ["node_modules/**", "test/**/*"],
     }),
   ],
   build: {
